@@ -1,0 +1,108 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+$fa-font-path:"../webfonts";
+
+
+
+
+
+
+
+
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~admin-lte/dist/css/adminlte.css';
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+
+    --company-primary:#007bff;
+    --company-secondary:red;
+
+
+    --bootstrap-primary :#007bff;
+    --bootstrap-success :#28a745;
+    --bootstrap-danger :#dc3545;
+    --bootstrap-secondary :#6c757d;
+    --bootstrap-info :#17a2b8;
+    --bootstrap-warning :#ffc107;
+}
+
+.dt-buttons
+{
+    display: contents !important;
+}
+
+.dataTables_length {
+    padding-top: 15px;
+    label{
+        display: flex;
+        font-weight: 400 !important;
+    }
+    select {
+        width: 90px;
+        margin: 0 2px;
+    }
+}
+.dataTables_filter {
+    label {
+        display: flex;
+        font-weight: 400 !important;
+    }
+}
+.table-container {
+    overflow-x: auto;       
+}
+.btn-icon {
+    all:unset !important;
+    cursor: pointer !important;
+    font-size: 20px !important;
+}
+.icon-success {
+    color: var(--blue);
+}
+.icon-primary {
+    color: var(--bootstrap-primary);
+}
+.icon-success {
+    color: var(--bootstrap-success);
+}
+.icon-danger {
+    color: var(--bootstrap-danger);
+}
+
+.dataTables_paginate{
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+}
+.pagination {
+    display: block !important;
+    padding-left: 0;
+    // border-radius: 4px;
+    white-space: initial;
+}
+
+.paginate_button {
+    display: inline-table !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+// 
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    // border:none !important;
+}

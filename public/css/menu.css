@@ -1,0 +1,22 @@
+.nav-treeview a{
+    margin-left:5px !important;
+    width: 98% !important;    
+}
+
+.router-link-exact-active{
+    background: #e5e5e5 !important;
+    color: #000 !important;
+}
+
+
+[class*="sidebar-light-"] .nav-sidebar > .nav-item.menu-open > .nav-link, [class*="sidebar-light-"] .nav-sidebar > .nav-item:hover > .nav-link {
+    background-color: #0d86ff !important; 
+    color: #fff !important;
+}
+.menu {
+    /* width: 100%; */
+}
+
+/* [class*="sidebar-light-"] .nav-sidebar > .nav-item.menu-open > .nav-link, [class*="sidebar-light-"] .nav-sidebar > .nav-link {
+    background-color: red;
+} */

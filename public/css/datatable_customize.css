@@ -1,0 +1,71 @@
+:root {
+    --company-primary-color:#3178b3;   
+    --company-primary-color-opacity:#3178b369;   
+}
+.dt-buttons button {
+    border: none;
+    background-color: var(--company-primary-color)!important;
+    background-image: none !important;           
+    color:#fff !important;
+    font-size: 16px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 8px 20px !important;
+}
+.dt-button-collection button
+{             
+    background: var(--company-primary-color-opacity)!important;
+}
+.dt-button-collection .active
+{
+    background: var(--company-primary-color)!important;
+} 
+.dataTable {
+    margin-bottom: 10px !important;
+    width:100% !important;
+}
+.dataTable thead{
+    background: #3a464f !important;
+    color: white !important;
+}
+.dt-down-arrow {
+    color: #fff !important;
+}
+.dataTables_wrapper .dataTables_processing {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 200px !important;
+    margin-left: -100px !important;
+    margin-top: -26px !important;
+    text-align: center !important;
+    padding: 1em 0 !important;
+    background-color: #fff !important;
+    border: 1px solid #ddd !important;
+    border-radius: 2px !important;
+    font-weight: 800 !important;
+    font-size: 14px !important;
+    padding-bottom: 35px !important;
+}
+.dataTables_paginate {
+    /* border: 1px solid #ddd;
+    padding: 0 !important; */
+}
+.paginate_button {
+    /* border-right: 1px solid #ddd !important;
+    margin: 0 !important; */
+}
+.dataTables_paginate .current{
+    background: var(--company-primary-color)!important;    
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff !important;
+}
+table.dataTable.no-footer {
+    border:none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: none !important;    
+    border-color: #fff !important;
+}
