@@ -17,6 +17,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">    
   <link rel="stylesheet" type="text/css" href="{{ asset('css/buttons.dataTables.min.css') }}">            
   <link rel="stylesheet" type="text/css" href="{{ asset('css/datatable_customize.css') }}" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="{{ asset('school.png') }}">
   {{-- datatables --}}
   
 
