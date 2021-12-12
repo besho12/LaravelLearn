@@ -2322,7 +2322,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  beforeDestroy: function beforeDestroy() {
+    // localStorage.removeItem('vuex');
+    this.$store.commit('show', {
+      id: ''
+    });
+  },
   data: function data() {
     return {
       form: new Form({
@@ -2357,15 +2364,17 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    axios.post('/api/get_teacher', {
-      // id:this.$route.params.teacher_id
-      id: this.$store.state.main_id[0]['id']
-    }).then(function (res) {
-      _this.form.fill(res.data); // this.$store.commit('show', {id: ''});          
+    if (this.$store.state.main_id[0]['id']) {
+      axios.post('/api/get_teacher', {
+        // id:this.$route.params.teacher_id
+        id: this.$store.state.main_id[0]['id']
+      }).then(function (res) {
+        _this.form.fill(res.data); // this.$store.commit('show', {id: ''});          
 
-    })["catch"](function (err) {
-      return console.log(err);
-    });
+      })["catch"](function (err) {
+        return console.log(err);
+      });
+    }
   }
 });
 
@@ -60758,26 +60767,40 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-md-12" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        staticStyle: { padding: "4px 30px" },
-                        attrs: { type: "submit" },
-                      },
-                      [_vm._v("Save")]
-                    ),
+                    !this.$store.state.main_id[0]["id"]
+                      ? _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-primary",
+                            staticStyle: { padding: "4px 30px" },
+                            attrs: { type: "submit" },
+                          },
+                          [_vm._v("Save")]
+                        )
+                      : this.$store.state.main_id[0]["id"]
+                      ? _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-primary",
+                            staticStyle: { padding: "4px 30px" },
+                            attrs: { type: "submit" },
+                          },
+                          [_vm._v("Update")]
+                        )
+                      : _vm._e(),
                     _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-success",
-                        staticStyle: { padding: "4px 30px" },
-                        attrs: { type: "button" },
-                        on: { click: _vm.newTeacher },
-                      },
-                      [_vm._v("New")]
-                    ),
+                    this.$store.state.main_id[0]["id"]
+                      ? _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-success",
+                            staticStyle: { padding: "4px 30px" },
+                            attrs: { type: "button" },
+                            on: { click: _vm.newTeacher },
+                          },
+                          [_vm._v("New")]
+                        )
+                      : _vm._e(),
                   ]),
                 ]),
               ]

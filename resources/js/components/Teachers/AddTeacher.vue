@@ -54,8 +54,9 @@
                                 
 
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary" style="padding:4px 30px;">Save</button>
-                                    <button type="button" @click="newTeacher" class="btn btn-success" style="padding:4px 30px;">New</button>
+                                    <button type="submit" v-if="!this.$store.state.main_id[0]['id']" class="btn btn-primary" style="padding:4px 30px;">Save</button>
+                                    <button type="submit" v-else-if="this.$store.state.main_id[0]['id']" class="btn btn-primary" style="padding:4px 30px;">Update</button>
+                                    <button type="button" v-if="this.$store.state.main_id[0]['id']" @click="newTeacher" class="btn btn-success" style="padding:4px 30px;">New</button>                                    
                                 </div>
                             </div>
                         </form>                        
@@ -69,7 +70,11 @@
 <script>
 
 
-    export default {       
+    export default { 
+        beforeDestroy () {
+            // localStorage.removeItem('vuex');
+            this.$store.commit('show', {id: ''});
+        },      
         data: () => ({
             form: new Form({
                 id: '',
@@ -100,14 +105,17 @@
                 this.form.reset();
             }
         },
-        created() {            
-            axios.post('/api/get_teacher',{
-                // id:this.$route.params.teacher_id
-                id:this.$store.state.main_id[0]['id']
-            }).then(res => {
-                this.form.fill(res.data);      
-                // this.$store.commit('show', {id: ''});          
-            }).catch(err => console.log(err));   
+        created() {       
+            if(this.$store.state.main_id[0]['id'])     
+            {
+                axios.post('/api/get_teacher',{
+                    // id:this.$route.params.teacher_id
+                    id:this.$store.state.main_id[0]['id']
+                }).then(res => {
+                    this.form.fill(res.data);      
+                    // this.$store.commit('show', {id: ''});          
+                }).catch(err => console.log(err));   
+            }
         }
     }
 </script>
