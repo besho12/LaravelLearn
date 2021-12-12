@@ -55,6 +55,11 @@ $fa-font-path:"../webfonts";
         margin: 0 2px;
     }
 }
+.card-header {
+    background-color: #434343 !important;
+    color: #fff !important;
+    font-size: 18px !important;
+}
 .dataTables_filter {
     label {
         display: flex;

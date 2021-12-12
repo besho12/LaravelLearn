@@ -2323,6 +2323,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   beforeDestroy: function beforeDestroy() {
     // localStorage.removeItem('vuex');
@@ -2349,6 +2350,16 @@ __webpack_require__.r(__webpack_exports__);
         Swal.fire({
           icon: 'success',
           title: 'Teacher Added',
+          confirmButtonColor: '#28a745',
+          confirmButtonText: 'Okay'
+        });
+      });
+    },
+    editTeacher: function editTeacher() {
+      this.form.post('api/edit/teacher').then(function () {
+        Swal.fire({
+          icon: 'success',
+          title: 'Teacher Updated',
           confirmButtonColor: '#28a745',
           confirmButtonText: 'Okay'
         });
@@ -60494,7 +60505,11 @@ var render = function () {
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-12" }, [
         _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-header" }, [_vm._v("Add Teahcer")]),
+          !this.$store.state.main_id[0]["id"]
+            ? _c("div", { staticClass: "card-header" }, [_vm._v("Add Teahcer")])
+            : _c("div", { staticClass: "card-header" }, [
+                _vm._v("Update Teahcer"),
+              ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _c(
@@ -60503,7 +60518,7 @@ var render = function () {
                 on: {
                   submit: function ($event) {
                     $event.preventDefault()
-                    return _vm.addTeacher()
+                    _vm.form.id ? _vm.editTeacher() : _vm.addTeacher()
                   },
                 },
               },

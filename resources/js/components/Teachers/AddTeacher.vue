@@ -3,10 +3,11 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Add Teahcer</div>
+                    <div v-if="!this.$store.state.main_id[0]['id']" class="card-header">Add Teahcer</div>
+                    <div v-else class="card-header">Update Teahcer</div>
 
                     <div class="card-body">
-                        <form @submit.prevent="addTeacher()"> 
+                        <form @submit.prevent="form.id ? editTeacher() : addTeacher()">                             
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -94,6 +95,17 @@
                     Swal.fire({                        
                         icon: 'success',
                         title: 'Teacher Added',
+                        confirmButtonColor: '#28a745',    
+                        confirmButtonText: 'Okay',                    
+                    })                   
+                })
+            },
+            editTeacher(){
+                this.form.post('api/edit/teacher')
+                .then(() => {
+                    Swal.fire({                        
+                        icon: 'success',
+                        title: 'Teacher Updated',
                         confirmButtonColor: '#28a745',    
                         confirmButtonText: 'Okay',                    
                     })                   

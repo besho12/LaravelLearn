@@ -9,7 +9,18 @@ use Yajra\DataTables\Facades\DataTables;
 
 class TeacherController extends Controller
 {
-    //
+        
+    public function validateTeacherForm($request)
+    {
+        $this->validate($request, [
+            'name' => 'required|string|max:191',
+            'title' => 'required|string|max:191',
+            'age' => 'required|numeric|min:22|max:80',
+            'number_of_courses' => 'required|numeric|min:1|max:5',
+            'salary' => 'required|numeric|min:500|max:30000',
+            'address' => 'required|string|min:10',
+        ]);
+    }
     public function index()
     {
         // return DataTables::of(Teacher::select('id','name','address','year','grade'))->make(true);
@@ -34,17 +45,22 @@ class TeacherController extends Controller
     }
 
     public function store(Request $request)
-    {  
-        $this->validate($request, [
-            'name' => 'required|string|max:191',
-            'title' => 'required|string|max:191',
-            'age' => 'required|numeric|min:22|max:80',
-            'number_of_courses' => 'required|numeric|min:1|max:5',
-            'salary' => 'required|numeric|min:500|max:30000',
-            'address' => 'required|string|min:10',
-        ]);
-
+    {          
+        $this->validateTeacherForm($request);
         return Teacher::create([            
+            'name' => $request['name'],
+            'title' => $request['title'],
+            'age' => $request['age'],
+            'number_of_courses' => $request['number_of_courses'],
+            'salary' => $request['salary'],
+            'address'  => $request['address'],
+        ]);
+    }
+
+    public function update(Request $request)
+    {  
+        $this->validateTeacherForm($request);
+        return Teacher::where('id',$request['id'])->update([            
             'name' => $request['name'],
             'title' => $request['title'],
             'age' => $request['age'],

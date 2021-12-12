@@ -21,4 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/teachers/all', [App\Http\Controllers\TeacherController::class, 'index']);
 Route::post('add/teacher', [App\Http\Controllers\TeacherController::class, 'store'])->name('add_teacher');
+Route::post('edit/teacher', [App\Http\Controllers\TeacherController::class, 'update'])->name('edit_teacher');
 Route::post('get_teacher', [App\Http\Controllers\TeacherController::class, 'show']);
