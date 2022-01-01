@@ -2417,102 +2417,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     draggable: (vuedraggable__WEBPACK_IMPORTED_MODULE_0___default())
   },
+  methods: {},
   mounted: function mounted() {
     console.log('Component mounted.');
   }
@@ -64661,699 +64571,453 @@ var render = function () {
           _c("div", { staticClass: "card-header" }, [_vm._v("View Courses")]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
-            _c(
-              "div",
-              { staticStyle: { display: "flex", "overflow-y": "auto" } },
-              [
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(0),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
+            _c("div", { staticClass: "view_all_courses" }, [
+              _c(
+                "div",
+                { staticClass: "course" },
+                [
+                  _c("div", { staticClass: "course_category" }, [
+                    _vm._v("Math"),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "draggable",
+                    {
+                      staticClass: "drag_class",
+                      attrs: {
+                        group: "people",
+                        options: { animation: 200 },
+                        element: "div",
                       },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
+                    },
+                    [
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
                         ]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
                         ]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
                         ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(1),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "course" },
+                [
+                  _c("div", { staticClass: "course_category" }, [
+                    _vm._v("Math"),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "draggable",
+                    {
+                      staticClass: "drag_class",
+                      attrs: {
+                        group: "people",
+                        options: { animation: 200 },
+                        element: "div",
                       },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
-                        ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(2),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
+                    },
+                    [
+                      _c("h4", { staticClass: "no_courses_found" }, [
+                        _c("i", { staticClass: "fas fa-circle-notch" }),
+                        _vm._v(
+                          "\n                                    No Courses Found\n                                "
+                        ),
+                      ]),
+                    ]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "course" },
+                [
+                  _c("div", { staticClass: "course_category" }, [
+                    _vm._v("Math"),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "draggable",
+                    {
+                      staticClass: "drag_class",
+                      attrs: {
+                        group: "people",
+                        options: { animation: 200 },
+                        element: "div",
                       },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
+                    },
+                    [
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
                         ]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
                         ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
-                        ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(3),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
+                      ]),
+                    ]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "course" },
+                [
+                  _c("div", { staticClass: "course_category" }, [
+                    _vm._v("Math"),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "draggable",
+                    {
+                      staticClass: "drag_class",
+                      attrs: {
+                        group: "people",
+                        options: { animation: 200 },
+                        element: "div",
                       },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
+                    },
+                    [
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
                         ]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
                         ]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
                         ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(4),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "course" },
+                [
+                  _c("div", { staticClass: "course_category" }, [
+                    _vm._v("Math"),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "draggable",
+                    {
+                      staticClass: "drag_class",
+                      attrs: {
+                        group: "people",
+                        options: { animation: 200 },
+                        element: "div",
                       },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
+                    },
+                    [
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
                         ]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
                         ]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
                         ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(5),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "course" },
+                [
+                  _c("div", { staticClass: "course_category" }, [
+                    _vm._v("Math"),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "draggable",
+                    {
+                      staticClass: "drag_class",
+                      attrs: {
+                        group: "people",
+                        options: { animation: 200 },
+                        element: "div",
                       },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
+                    },
+                    [
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
                         ]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course_body" }, [
+                        _c("div", { staticClass: "course_pic" }, [
+                          _vm._v(
+                            "\n                                        Photo\n                                    "
+                          ),
                         ]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
+                        _c("div", { staticClass: "course_info" }, [
+                          _c("div", { staticClass: "course_name" }, [
+                            _vm._v(
+                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                            ),
+                          ]),
                         ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(6),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
-                      },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
-                        ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(7),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
-                      },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
-                        ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(8),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
-                      },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
-                        ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {},
-                  [
-                    _vm._m(9),
-                    _vm._v(" "),
-                    _c(
-                      "draggable",
-                      {
-                        staticClass: "table table-striped",
-                        attrs: {
-                          group: "people",
-                          options: { animation: 200 },
-                          element: "tbody",
-                        },
-                      },
-                      [
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otto")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@mdo")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jacob")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Thornton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@fat")]),
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("the Bird")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("@twitter")]),
-                        ]),
-                      ]
-                    ),
-                  ],
-                  1
-                ),
-              ]
-            ),
+                      ]),
+                    ]
+                  ),
+                ],
+                1
+              ),
+            ]),
           ]),
         ]),
       ]),
     ]),
   ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

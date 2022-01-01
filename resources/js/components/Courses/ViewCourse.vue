@@ -5,314 +5,223 @@
                 <div class="card">
                     <div class="card-header">View Courses</div>
 
-                    <div class="card-body">
-
-                        
-
-                        <div class="" style="display:flex;overflow-y: auto;">
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                    <div class="card-body">                        
+                        <div class="view_all_courses">                                                                                
+                            <div class="course">     
+                                <div class="course_category">Math</div>                          
+                                <draggable group="people" :options="{animation:200}" :element="'div'" class="drag_class">
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
                                 </draggable>
-                            </div>
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                            </div>                                                                                                                                 
+                            <div class="course">     
+                                <div class="course_category">Math</div>                          
+                                <draggable group="people" :options="{animation:200}" :element="'div'" class="drag_class">
+                                    <h4 class="no_courses_found">                                        
+                                        <i class="fas fa-circle-notch"></i>
+                                        No Courses Found
+                                    </h4>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
                                 </draggable>
-                            </div>                            
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                            </div>                                                                                                                                 
+                            <div class="course">     
+                                <div class="course_category">Math</div>                          
+                                <draggable group="people" :options="{animation:200}" :element="'div'" class="drag_class">                                                                                                                                                                                                                                                         
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
                                 </draggable>
-                            </div>
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                            </div>                                                                                                                                 
+                            <div class="course">     
+                                <div class="course_category">Math</div>                          
+                                <draggable group="people" :options="{animation:200}" :element="'div'" class="drag_class">                                                                                                                                                                                                                                                                                                                                                                                                 
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
                                 </draggable>
-                            </div>                            
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                            </div>                                                                                                                                 
+                            <div class="course">     
+                                <div class="course_category">Math</div>                          
+                                <draggable group="people" :options="{animation:200}" :element="'div'" class="drag_class">
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
                                 </draggable>
-                            </div>
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                            </div>                                                                                                                                 
+                            <div class="course">     
+                                <div class="course_category">Math</div>                          
+                                <draggable group="people" :options="{animation:200}" :element="'div'" class="drag_class">                                                                                                                               
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
+                                   <div class="course_body">                                       
+                                        <div class="course_pic">
+                                            Photo
+                                        </div>                                        
+                                        <div class="course_info">                                                    
+                                            <div class="course_name">
+                                                Math For Beginners 1 This Is a math course
+                                            </div>                                            
+                                        </div>
+                                   </div>                                                                                                    
                                 </draggable>
-                            </div>                            
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </draggable>
-                            </div>
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </draggable>
-                            </div>                            
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </draggable>
-                            </div>
-                            <div class="">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <draggable group="people" :options="{animation:200}" :element="'tbody'" class="table table-striped">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </draggable>
-                            </div>                            
-                        </div>
-                        
-                                               
+                            </div>                                                                                                                                                                                                                                                                                              
+                        </div>                                                                       
                     </div>
                 </div>
             </div>
@@ -326,6 +235,8 @@
     export default {
         components: {
             draggable
+        },
+        methods: {           
         },
         mounted() {
             console.log('Component mounted.')
