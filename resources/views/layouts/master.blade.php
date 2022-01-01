@@ -216,16 +216,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
                 <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <router-link to="/add_course" class="nav-link">
                         <i class="fas fa-plus nav-icon"></i>
                         <p>Add</p>
-                    </a>
+                    </router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <router-link to="/view_courses" class="nav-link">
                         <i class="fas fa-eye nav-icon"></i>
                         <p>View</p>
-                    </a>
+                    </router-link>
                 </li>
                 </ul>
             </li>

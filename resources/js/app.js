@@ -56,6 +56,10 @@ let routes = [
 
     { path: '/add_teacher', component: require('./components/Teachers/AddTeacher.vue').default },
     { path: '/view_teacher', component: require('./components/Teachers/ViewTeacher.vue').default },    
+
+
+    { path: '/add_course', component: require('./components/Courses/AddCourse.vue').default },
+    { path: '/view_courses', component: require('./components/Courses/ViewCourse.vue').default },    
     // { path: '/users', component: Foo },
     // { path: '/teachers', component: Bar },
     // { path: '/students', component: Bar },
