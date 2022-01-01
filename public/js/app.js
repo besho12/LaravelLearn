@@ -2271,6 +2271,243 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -64424,113 +64661,531 @@ var render = function () {
           _c("div", { staticClass: "card-header" }, [_vm._v("View Courses")]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-4" },
-                [
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _c(
-                    "draggable",
-                    {
-                      staticClass: "table table-striped",
-                      attrs: {
-                        group: "people",
-                        options: { animation: 200 },
-                        element: "tbody",
+            _c(
+              "div",
+              { staticStyle: { display: "flex", "overflow-y": "auto" } },
+              [
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
                       },
-                    },
-                    [
-                      _c("tr", [
-                        _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Mark")]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Otto")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("@mdo")]),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Jacob")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Thornton")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("@fat")]),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Larry")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("the Bird")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("@twitter")]),
-                      ]),
-                    ]
-                  ),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-4" },
-                [
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _c(
-                    "draggable",
-                    {
-                      staticClass: "table table-striped",
-                      attrs: {
-                        group: "people",
-                        options: { animation: 200 },
-                        element: "tbody",
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
                       },
-                    },
-                    [
-                      _c("tr", [
-                        _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Mark")]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Otto")]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
+                      },
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("@mdo")]),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Jacob")]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
+                      },
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Thornton")]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("@fat")]),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(4),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
+                      },
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Larry")]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("the Bird")]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(5),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
+                      },
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("@twitter")]),
-                      ]),
-                    ]
-                  ),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-4" }),
-            ]),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(6),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
+                      },
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(7),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
+                      },
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(8),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
+                      },
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {},
+                  [
+                    _vm._m(9),
+                    _vm._v(" "),
+                    _c(
+                      "draggable",
+                      {
+                        staticClass: "table table-striped",
+                        attrs: {
+                          group: "people",
+                          options: { animation: 200 },
+                          element: "tbody",
+                        },
+                      },
+                      [
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Mark")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Otto")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@mdo")]),
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Jacob")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Thornton")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@fat")]),
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Larry")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("the Bird")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("@twitter")]),
+                        ]),
+                      ]
+                    ),
+                  ],
+                  1
+                ),
+              ]
+            ),
           ]),
         ]),
       ]),
@@ -64538,6 +65193,134 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")]),
+      ]),
+    ])
+  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
