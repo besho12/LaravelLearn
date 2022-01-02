@@ -121,9 +121,9 @@ $fa-font-path:"../webfonts";
     overflow-x:hidden; 
 }
 
-.view_all_courses {
+.view_all_courses,.wmd-view-topscroll {
     display: -webkit-box;
-    overflow-y: auto;
+    overflow-x: scroll;    
 }
 @media only screen and (max-width: 448px) {
     .view_all_courses {        
@@ -134,7 +134,7 @@ $fa-font-path:"../webfonts";
     }
 }
 
-.view_all_courses , .drag_class {
+.view_all_courses,.wmd-view-topscroll , .drag_class {
 
     /* width */
     &::-webkit-scrollbar {
@@ -155,6 +155,19 @@ $fa-font-path:"../webfonts";
         border-radius: 10px;
     }
   }
+
+  .view_all_courses,.wmd-view-topscroll {
+    overflow-x: scroll;
+    overflow-y: hidden;    
+}
+
+.wmd-view-topscroll { height: 20px; }
+.scroll-div1 { 
+    // width:1500px;
+    overflow-x: scroll;
+    overflow-y: hidden;    
+}
+
 
 
 

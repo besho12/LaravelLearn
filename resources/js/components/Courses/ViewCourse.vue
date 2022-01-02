@@ -5,8 +5,12 @@
                 <div class="card">
                     <div class="card-header">View Courses</div>
 
-                    <div class="card-body">                        
-                        <div class="view_all_courses">                                                                                
+                    <div class="card-body" style="padding-top:0.75rem;">     
+                        <div class="wmd-view-topscroll" style="margin-bottom:10px;">
+                            <div class="scroll-div1">
+                            </div>
+                        </div>                  
+                        <div class="view_all_courses" id="view_all_courses">                                                                                
                             <div class="course">     
                                 <div class="course_category">Math</div>                          
                                 <draggable group="people" :options="{animation:200}" :element="'div'" class="drag_class">
@@ -231,6 +235,27 @@
 
 <script>
 
+    function showScrollTop()
+    {
+        var outerwidth = document.getElementById('view_all_courses').scrollWidth;    
+        $('.scroll-div1').css('width',outerwidth);  
+        
+        $(".wmd-view-topscroll").scroll(function () {
+            $(".view_all_courses")
+            .scrollLeft($(".wmd-view-topscroll").scrollLeft());
+        });
+
+        $(".view_all_courses").scroll(function () {
+            $(".wmd-view-topscroll")
+            .scrollLeft($(".view_all_courses").scrollLeft());
+        });
+    }
+
+    $(document).ready(function(){
+       showScrollTop()
+    });
+    
+
     import draggable from 'vuedraggable';
     export default {
         components: {
@@ -240,6 +265,7 @@
         },
         mounted() {
             console.log('Component mounted.')
+            showScrollTop();
         }
     }
 </script>

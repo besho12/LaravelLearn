@@ -2417,6 +2417,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+function showScrollTop() {
+  var outerwidth = document.getElementById('view_all_courses').scrollWidth;
+  $('.scroll-div1').css('width', outerwidth);
+  $(".wmd-view-topscroll").scroll(function () {
+    $(".view_all_courses").scrollLeft($(".wmd-view-topscroll").scrollLeft());
+  });
+  $(".view_all_courses").scroll(function () {
+    $(".wmd-view-topscroll").scrollLeft($(".view_all_courses").scrollLeft());
+  });
+}
+
+$(document).ready(function () {
+  showScrollTop();
+});
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -2425,6 +2443,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {},
   mounted: function mounted() {
     console.log('Component mounted.');
+    showScrollTop();
   }
 });
 
@@ -64570,454 +64589,484 @@ var render = function () {
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header" }, [_vm._v("View Courses")]),
           _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _c("div", { staticClass: "view_all_courses" }, [
-              _c(
-                "div",
-                { staticClass: "course" },
-                [
-                  _c("div", { staticClass: "course_category" }, [
-                    _vm._v("Math"),
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "draggable",
-                    {
-                      staticClass: "drag_class",
-                      attrs: {
-                        group: "people",
-                        options: { animation: 200 },
-                        element: "div",
-                      },
-                    },
-                    [
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                    ]
-                  ),
-                ],
-                1
-              ),
+          _c(
+            "div",
+            {
+              staticClass: "card-body",
+              staticStyle: { "padding-top": "0.75rem" },
+            },
+            [
+              _vm._m(0),
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "course" },
+                {
+                  staticClass: "view_all_courses",
+                  attrs: { id: "view_all_courses" },
+                },
                 [
-                  _c("div", { staticClass: "course_category" }, [
-                    _vm._v("Math"),
-                  ]),
+                  _c(
+                    "div",
+                    { staticClass: "course" },
+                    [
+                      _c("div", { staticClass: "course_category" }, [
+                        _vm._v("Math"),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "draggable",
+                        {
+                          staticClass: "drag_class",
+                          attrs: {
+                            group: "people",
+                            options: { animation: 200 },
+                            element: "div",
+                          },
+                        },
+                        [
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                        ]
+                      ),
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c(
-                    "draggable",
-                    {
-                      staticClass: "drag_class",
-                      attrs: {
-                        group: "people",
-                        options: { animation: 200 },
-                        element: "div",
-                      },
-                    },
+                    "div",
+                    { staticClass: "course" },
                     [
-                      _c("h4", { staticClass: "no_courses_found" }, [
-                        _c("i", { staticClass: "fas fa-circle-notch" }),
-                        _vm._v(
-                          "\n                                    No Courses Found\n                                "
-                        ),
+                      _c("div", { staticClass: "course_category" }, [
+                        _vm._v("Math"),
                       ]),
-                    ]
+                      _vm._v(" "),
+                      _c(
+                        "draggable",
+                        {
+                          staticClass: "drag_class",
+                          attrs: {
+                            group: "people",
+                            options: { animation: 200 },
+                            element: "div",
+                          },
+                        },
+                        [
+                          _c("h4", { staticClass: "no_courses_found" }, [
+                            _c("i", { staticClass: "fas fa-circle-notch" }),
+                            _vm._v(
+                              "\n                                    No Courses Found\n                                "
+                            ),
+                          ]),
+                        ]
+                      ),
+                    ],
+                    1
                   ),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "course" },
-                [
-                  _c("div", { staticClass: "course_category" }, [
-                    _vm._v("Math"),
-                  ]),
                   _vm._v(" "),
                   _c(
-                    "draggable",
-                    {
-                      staticClass: "drag_class",
-                      attrs: {
-                        group: "people",
-                        options: { animation: 200 },
-                        element: "div",
-                      },
-                    },
+                    "div",
+                    { staticClass: "course" },
                     [
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
+                      _c("div", { staticClass: "course_category" }, [
+                        _vm._v("Math"),
                       ]),
-                    ]
+                      _vm._v(" "),
+                      _c(
+                        "draggable",
+                        {
+                          staticClass: "drag_class",
+                          attrs: {
+                            group: "people",
+                            options: { animation: 200 },
+                            element: "div",
+                          },
+                        },
+                        [
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                        ]
+                      ),
+                    ],
+                    1
                   ),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "course" },
-                [
-                  _c("div", { staticClass: "course_category" }, [
-                    _vm._v("Math"),
-                  ]),
                   _vm._v(" "),
                   _c(
-                    "draggable",
-                    {
-                      staticClass: "drag_class",
-                      attrs: {
-                        group: "people",
-                        options: { animation: 200 },
-                        element: "div",
-                      },
-                    },
+                    "div",
+                    { staticClass: "course" },
                     [
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
+                      _c("div", { staticClass: "course_category" }, [
+                        _vm._v("Math"),
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
+                      _c(
+                        "draggable",
+                        {
+                          staticClass: "drag_class",
+                          attrs: {
+                            group: "people",
+                            options: { animation: 200 },
+                            element: "div",
+                          },
+                        },
+                        [
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
                           ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
                           ]),
-                        ]),
-                      ]),
-                    ]
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                        ]
+                      ),
+                    ],
+                    1
                   ),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "course" },
-                [
-                  _c("div", { staticClass: "course_category" }, [
-                    _vm._v("Math"),
-                  ]),
                   _vm._v(" "),
                   _c(
-                    "draggable",
-                    {
-                      staticClass: "drag_class",
-                      attrs: {
-                        group: "people",
-                        options: { animation: 200 },
-                        element: "div",
-                      },
-                    },
+                    "div",
+                    { staticClass: "course" },
                     [
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
+                      _c("div", { staticClass: "course_category" }, [
+                        _vm._v("Math"),
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
+                      _c(
+                        "draggable",
+                        {
+                          staticClass: "drag_class",
+                          attrs: {
+                            group: "people",
+                            options: { animation: 200 },
+                            element: "div",
+                          },
+                        },
+                        [
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
                           ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
                           ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
                           ]),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
                           ]),
-                        ]),
-                      ]),
-                    ]
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                        ]
+                      ),
+                    ],
+                    1
                   ),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "course" },
-                [
-                  _c("div", { staticClass: "course_category" }, [
-                    _vm._v("Math"),
-                  ]),
                   _vm._v(" "),
                   _c(
-                    "draggable",
-                    {
-                      staticClass: "drag_class",
-                      attrs: {
-                        group: "people",
-                        options: { animation: 200 },
-                        element: "div",
-                      },
-                    },
+                    "div",
+                    { staticClass: "course" },
                     [
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
-                          ]),
-                        ]),
+                      _c("div", { staticClass: "course_category" }, [
+                        _vm._v("Math"),
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "course_body" }, [
-                        _c("div", { staticClass: "course_pic" }, [
-                          _vm._v(
-                            "\n                                        Photo\n                                    "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "course_info" }, [
-                          _c("div", { staticClass: "course_name" }, [
-                            _vm._v(
-                              "\n                                            Math For Beginners 1 This Is a math course\n                                        "
-                            ),
+                      _c(
+                        "draggable",
+                        {
+                          staticClass: "drag_class",
+                          attrs: {
+                            group: "people",
+                            options: { animation: 200 },
+                            element: "div",
+                          },
+                        },
+                        [
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
                           ]),
-                        ]),
-                      ]),
-                    ]
+                          _vm._v(" "),
+                          _c("div", { staticClass: "course_body" }, [
+                            _c("div", { staticClass: "course_pic" }, [
+                              _vm._v(
+                                "\n                                        Photo\n                                    "
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "course_info" }, [
+                              _c("div", { staticClass: "course_name" }, [
+                                _vm._v(
+                                  "\n                                            Math For Beginners 1 This Is a math course\n                                        "
+                                ),
+                              ]),
+                            ]),
+                          ]),
+                        ]
+                      ),
+                    ],
+                    1
                   ),
-                ],
-                1
+                ]
               ),
-            ]),
-          ]),
+            ]
+          ),
         ]),
       ]),
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "wmd-view-topscroll",
+        staticStyle: { "margin-bottom": "10px" },
+      },
+      [_c("div", { staticClass: "scroll-div1" })]
+    )
+  },
+]
 render._withStripped = true
 
 
