@@ -23,3 +23,13 @@ Route::get('/teachers/all', [App\Http\Controllers\TeacherController::class, 'ind
 Route::post('add/teacher', [App\Http\Controllers\TeacherController::class, 'store'])->name('add_teacher');
 Route::post('edit/teacher', [App\Http\Controllers\TeacherController::class, 'update'])->name('edit_teacher');
 Route::post('get_teacher', [App\Http\Controllers\TeacherController::class, 'show']);
+
+
+
+
+
+Route::post('get_project', [App\Http\Controllers\ProjectController::class, 'show']);
+Route::get('/projects/all', [App\Http\Controllers\ProjectController::class, 'index']);
+Route::post('get_milestones', [App\Http\Controllers\MilestoneController::class, 'show']);
+Route::post('get_tasks', [App\Http\Controllers\TaskController::class, 'index']);
+Route::post('save_task', [App\Http\Controllers\TaskController::class, 'save']);

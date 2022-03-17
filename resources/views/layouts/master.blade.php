@@ -8,11 +8,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>School</title>
   
-  
+  {{-- dropzone --}}
+  {{-- <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css"
+    type="text/css"
+  /> --}}
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css" />
+  <script src="{{ asset('js/dropzone.js') }}"></script>
+
+  {{-- <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+  {{-- dropzone --}}
+
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/dropzone-custome.css') }}">
   {{-- datatables --}}
   <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.dataTables.css') }}">    
   <link rel="stylesheet" type="text/css" href="{{ asset('css/buttons.dataTables.min.css') }}">            
@@ -210,7 +225,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-newspaper"></i>
                 <p>
-                    Manage Courses
+                    Manage Projects
                     <i class="right fas fa-angle-left"></i>
                 </p>
                 </a>
@@ -221,10 +236,41 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <p>Add</p>
                     </router-link>
                 </li>
-                <li class="nav-item">
-                    <router-link to="/view_courses" class="nav-link">
+                {{-- <li class="nav-item">
+                    <router-link to="/view_course" class="nav-link">
                         <i class="fas fa-eye nav-icon"></i>
                         <p>View</p>
+                    </router-link>
+                </li> --}}
+                <li class="nav-item">
+                    <router-link to="/view_projects" class="nav-link">
+                        <i class="fas fa-eye nav-icon"></i>
+                        <p>View</p>
+                    </router-link>
+                </li>
+                </ul>
+            </li>
+
+
+            <li class="nav-item menu">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-chart-line"></i>
+                <p>
+                    Charts
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+                </a>
+                <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <router-link to="/charts/piecahrt" class="nav-link">
+                        <i class="fas fa-chart-pie nav-icon"></i>
+                        <p>Piechart</p>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/charts/barchart" class="nav-link">
+                        <i class="far fa-chart-bar nav-icon"></i>
+                        <p>Barchart</p>
                     </router-link>
                 </li>
                 </ul>
@@ -292,15 +338,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- REQUIRED SCRIPTS -->
 
-
+{{-- <script src="https://unpkg.com/vue-sortable@0.1.3"></script> --}}
 {{-- datatables --}}
 <script type="text/javascript" charset="utf8" src="{{ asset('js/dataTables/jszip.min.js') }}"></script>
 <script type="text/javascript" charset="utf8" src="{{ asset('js/dataTables/pdfmake.min.js') }}"></script>
 <script type="text/javascript" charset="utf8" src="{{ asset('js/dataTables/vfs_fonts.js') }}"></script>
 {{-- datatables --}}
 
+{{-- <script src="https://unpkg.com/vue-sortable@0.1.3"></script> --}}
 <script src="{{ asset('js/app.js') }}"></script>
 
+
+{{-- used in sortable --}}
+{{-- <script src="{{ asset('js/jquery-ui.min.js') }}"></script> --}}
+
+
+{{-- used in sortable --}}
 
 <script>
 

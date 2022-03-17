@@ -1,0 +1,36 @@
+.attachment_section .dropzone {
+    min-height: 150px!important;
+    background: #fff!important;
+    padding: 20px!important;
+    cursor: pointer!important;
+    box-shadow: 1px 3px 8px rgb(0 0 0 / 9%)!important;
+    
+    border: 1px solid #eee!important;
+  }
+  .attachment_section .dropzone .dz-message {
+    margin: 2rem 0!important;
+    /* font-size: 1.5rem!important; */
+    text-align: center!important;
+    /* color: #a6a9b7!important; */
+  }
+  .attachment_section .card {      
+    background: #fff !important;
+    border: none !important;
+    margin-bottom: 30px !important;
+    -webkit-box-shadow: 3px 4px 7px rgb(0 0 0 / 9%) !important; 
+    -moz-box-shadow: 3px 4px 7px rgb(0 0 0 / 9%) !important;
+    box-shadow: 3px 4px 7px rgb(0 0 0 / 9%) !important;
+    border: 1px solid rgba(0, 0, 0, 0.125) !important;
+    padding: 5px !important;
+    border-radius: 4px !important;
+  }
+
+  .attachment_section .card-img, .card-img-top {
+    width:100% !important;
+    height: 200px !important;
+  }
+
+  .dropzone {
+    border: 3px dashed #ddd !important;
+    font-size: 20px !important;
+  }

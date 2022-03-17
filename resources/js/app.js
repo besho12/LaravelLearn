@@ -14,11 +14,47 @@ window.Form = Form;
 import Swal from 'sweetalert2';
 window.Swal = Swal;
 
+// import Dropzone from '../../public/js/dropzone';
+// window.Dropzone = Dropzone;
+
+
+
+import filter from './filter';
+
+
+
+
+
+///////when convert from mobile inspect to desktop inspect//////
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    window.mobile = true;
+} else {
+    window.mobile = false;
+}
+///////when convert from mobile inspect to desktop inspect//////
 
 
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 import store from './store';
+
+import vuetify from './vuetify';
+
+
+
+
+
+// import Sortable from '../../public/js/sortable.js';
+// // global export
+// window.Sortable = Sortable;
+
+
+
+// import Sortable from 'vue-sortable'
+// Vue.use(Sortable)
+
+
+
 
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -59,7 +95,12 @@ let routes = [
 
 
     { path: '/add_course', component: require('./components/Courses/AddCourse.vue').default },
-    { path: '/view_courses', component: require('./components/Courses/ViewCourse.vue').default },    
+    { path: '/view_project', component: require('./components/Courses/ViewProject.vue').default },    
+    { path: '/view_projects', component: require('./components/Courses/ViewProjects.vue').default },    
+
+
+    { path: '/charts/piecahrt', component: require('./components/Charts/Piechart.vue').default },
+    { path: '/charts/barchart', component: require('./components/Charts/Barchart.vue').default },
     // { path: '/users', component: Foo },
     // { path: '/teachers', component: Bar },
     // { path: '/students', component: Bar },
@@ -83,6 +124,8 @@ let router = new VueRouter({
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('attachment-component', require('./components/AttachmentComponent.vue').default);
+Vue.component('vuetify', require('./components/Vuetify.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -93,5 +136,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
     router,
-    store
+    store,
+    filter,
+    vuetify,
 });
